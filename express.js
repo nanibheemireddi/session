@@ -20,7 +20,7 @@ app.get('/about', function(req, res)
 
 app.get('/nani',middleware.requireAuthentication,function(req, res)
 {
-	res.send('about nani ');
+	res.send('about nani !!');
 });
 
 app.use(express.static(__dirname + "/public"));
